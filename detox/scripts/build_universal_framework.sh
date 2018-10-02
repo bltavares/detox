@@ -9,7 +9,7 @@ function remove_arch() {
     lipo -create "${1}" "${2}" -output "${3}"
 }
 
-UNIVERSAL_OUTPUTFOLDER=${DERIVED_DATA}/Build/Products/${CONFIGURATION}-universal
+UNIVERSAL_OUTPUTFOLDER="${DERIVED_DATA}/Build/Products/${CONFIGURATION}-universal"
 
 # Make sure the output directory exists
 
