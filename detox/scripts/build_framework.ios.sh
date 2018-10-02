@@ -1,6 +1,6 @@
 #!/bin/bash -e -x
 
-detoxRootPath="$(dirname $(dirname ${0}))"
+detoxRootPath="$(dirname "$(dirname "$0")")"
 detoxVersion=`node -p "require('${detoxRootPath}/package.json').version"`
 
 sha1=`(echo "${detoxVersion}" && xcodebuild -version) | shasum | awk '{print $1}' #"${2}"`
